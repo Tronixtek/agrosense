@@ -6,20 +6,20 @@ import { getAnalytics } from "firebase/analytics";
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// This apiKey/appId pair is the public client identifier for the Firebase
+// project (safe to expose per Firebase docs) — access is controlled by
+// Firebase Security Rules, not by keeping this object secret.
 const firebaseConfig = {
-  apiKey: "AIzaSyDWXFQTAF0BEzhTZAnRapkGzOmWY1vW4tk",
-  authDomain: "agrosense-e8582.firebaseapp.com",
-  databaseURL: "https://agrosense-e8582-default-rtdb.firebaseio.com",
-  projectId: "agrosense-e8582",
-  storageBucket: "agrosense-e8582.firebasestorage.app",
-  messagingSenderId: "193624218847",
-  appId: "1:193624218847:web:d626885e21a74ee57cdd6a",
-  measurementId: "G-WNV3YG0H3W"
+  apiKey: "your-firebase-api-key",
+  authDomain: "your-project.firebaseapp.com",
+  databaseURL: "https://your-project-default-rtdb.firebaseio.com",
+  projectId: "your-project",
+  storageBucket: "your-project.firebasestorage.app",
+  messagingSenderId: "your-messaging-sender-id",
+  appId: "your-app-id",
+  measurementId: "your-measurement-id"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-
-
-databaseSecret:wM9loNSpnjREDCLgXqHOoRR6G0I5izVgPzdESg8i

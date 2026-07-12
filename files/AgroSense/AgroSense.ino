@@ -20,16 +20,7 @@
 #include <ArduinoJson.h>
 #include <esp_system.h>   // esp_reset_reason() — tells a true power-on apart from our own restart
 #include "decision_tree_rules.h"
-
-// ════════════════════════════════════════════════
-//  CONFIGURATION
-// ════════════════════════════════════════════════
-const char* WIFI_SSID     = "VT";
-const char* WIFI_PASSWORD = "password";
-
-const char* FB_URL    = "https://agrosense-e8582-default-rtdb.firebaseio.com";
-const char* FB_SECRET = "wM9loNSpnjREDCLgXqHOoRR6G0I5izVgPzdESg8i";
-const char* FB_HOST   = "agrosense-e8582-default-rtdb.firebaseio.com";
+#include "secrets.h"      // WIFI_SSID, WIFI_PASSWORD, FB_URL, FB_SECRET, FB_HOST — copy from secrets.h.example
 
 // ════════════════════════════════════════════════
 //  PIN MAP

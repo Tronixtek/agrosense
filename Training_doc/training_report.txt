@@ -1,0 +1,36 @@
+========================================================
+  AgroSense — Decision Tree Training Report
+========================================================
+
+Dataset size  : 6400 samples
+Train / Test  : 5120 / 1280
+Features      : moisture_pct, texture_code, growth_stage
+Classes       : HOLD(0)  IRRIGATE(1)  URGENT(2)
+Tree depth    : 5
+Tree leaves   : 26
+
+Test accuracy : 88.4%
+CV accuracy   : 82.4% ± 3.5%
+
+Classification Report:
+
+              precision    recall  f1-score   support
+
+        HOLD       1.00      0.82      0.90       576
+    IRRIGATE       0.76      0.94      0.84       428
+      URGENT       0.91      0.92      0.92       276
+
+    accuracy                           0.88      1280
+   macro avg       0.89      0.90      0.89      1280
+weighted avg       0.90      0.88      0.89      1280
+
+
+Feature Importances:
+  moisture_pct     0.8074  ████████████████████████████████
+  texture_code     0.0814  ███
+  growth_stage     0.1112  ████
+
+Class distribution:
+  HOLD        2878  (45.0%)
+  IRRIGATE    2140  (33.4%)
+  URGENT      1382  (21.6%)

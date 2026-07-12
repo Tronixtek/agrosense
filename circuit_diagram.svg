@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="980" viewBox="0 0 1400 980">
+<rect width="1400" height="980" fill="#ffffff"/>
+<defs>
+  <marker id="arr" viewBox="0 0 8 8" refX="7" refY="4"
+    markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M1 1 L7 4 L1 7" fill="none" stroke-width="1.2"
+      stroke="context-stroke" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+  <style>
+    .wire  { fill:none; stroke-linecap:round; stroke-linejoin:round }
+    .comp  { fill:#f8fafc; stroke:#1e293b; stroke-width:1.8 }
+    .lbl   { font-family:Consolas,monospace; font-size:11px; fill:#1e293b }
+    .lbls  { font-family:Consolas,monospace; font-size:9.5px; fill:#475569 }
+    .ref   { font-family:Consolas,monospace; font-size:9px; fill:#7c3aed; font-style:italic }
+    .pin   { font-family:Consolas,monospace; font-size:9px; fill:#334155 }
+    .rail  { fill:none; stroke-linecap:round }
+    .dot   { }
+    .title { font-family:Arial,sans-serif; font-weight:bold; fill:#1e293b }
+  </style>
+</defs>
+<rect x="20" y="80" width="140" height="120" rx="5" fill="#FCE7F3" stroke="#BE185D" stroke-width="1.8"/>
+<text x="90" y="96" class="ref" text-anchor="middle">PSU1</text>
+<text x="90" y="135" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#831843">Power Supply</text>
+<text x="90" y="152" text-anchor="middle" font-family="Arial,sans-serif" font-size="9.5" fill="#BE185D">5V DC  +  12V DC</text>
+<path class="wire" d="M160 100 L180 100" stroke="#EA580C" stroke-width="1.6"/>
+<text x="184" y="104" class="pin" fill="#EA580C">12V+</text>
+<path class="wire" d="M160 140 L180 140" stroke="#DC2626" stroke-width="1.6"/>
+<text x="184" y="144" class="pin" fill="#DC2626">5V+</text>
+<path class="wire" d="M160 180 L180 180" stroke="#0F172A" stroke-width="1.6"/>
+<text x="184" y="184" class="pin" fill="#0F172A">GND</text>
+<path class="wire" d="M160 60 L1380 60" stroke="#EA580C" stroke-width="2.5"/>
+<path class="wire" d="M160 100 L1380 100" stroke="#DC2626" stroke-width="2.5"/>
+<path class="wire" d="M160 140 L1380 140" stroke="#0F172A" stroke-width="2.5"/>
+<path class="wire" d="M160 100 L180 100 L180 60" stroke="#EA580C" stroke-width="1.6"/>
+<circle cx="180" cy="60" r="4" fill="#EA580C"/>
+<path class="wire" d="M160 140 L180 140 L180 100" stroke="#DC2626" stroke-width="1.6"/>
+<circle cx="180" cy="100" r="4" fill="#DC2626"/>
+<path class="wire" d="M160 180 L180 180 L180 140" stroke="#0F172A" stroke-width="1.6"/>
+<circle cx="180" cy="140" r="4" fill="#0F172A"/>
+<text x="760" y="54" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="#EA580C">12V RAIL</text>
+<text x="760" y="94" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="#DC2626">5V RAIL</text>
+<text x="760" y="134" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="bold" fill="#0F172A">GND RAIL</text>
+<rect x="20" y="200" width="160" height="120" rx="5" fill="#E0F2FE" stroke="#0369A1" stroke-width="1.8"/>
+<text x="100" y="216" class="ref" text-anchor="middle">U2</text>
+<text x="100" y="254" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#0C4A6E">Sensor 1
+Zone A</text>
+<text x="100" y="270" text-anchor="middle" font-family="Arial,sans-serif" font-size="9.5" fill="#0369A1">Capacitive Sensor</text>
+<path class="wire" d="M180 220 L200 220" stroke="#1e293b" stroke-width="1.6"/>
+<text x="206" y="224" class="pin" text-anchor="start">VCC</text>
+<path class="wire" d="M180 260 L200 260" stroke="#1e293b" stroke-width="1.6"/>
+<text x="206" y="264" class="pin" text-anchor="start">GND</text>
+<path class="wire" d="M180 300 L200 300" stroke="#1e293b" stroke-width="1.6"/>
+<text x="206" y="304" class="pin" text-anchor="start">AOUT</text>
+<path class="wire" d="M200 220 L220 220 L220 100" stroke="#DC2626" stroke-width="1.6"/>
+<circle cx="220" cy="100" r="4" fill="#DC2626"/>
+<path class="wire" d="M200 260 L240 260 L240 140" stroke="#0F172A" stroke-width="1.6"/>
+<circle cx="240" cy="140" r="4" fill="#0F172A"/>
+<rect x="260" y="200" width="160" height="120" rx="5" fill="#E0F2FE" stroke="#0369A1" stroke-width="1.8"/>
+<text x="340" y="216" class="ref" text-anchor="middle">U3</text>
+<text x="340" y="254" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#0C4A6E">Sensor 2
+Zone B</text>
+<text x="340" y="270" text-anchor="middle" font-family="Arial,sans-serif" font-size="9.5" fill="#0369A1">Capacitive Sensor</text>
+<path class="wire" d="M420 220 L440 220" stroke="#1e293b" stroke-width="1.6"/>
+<text x="446" y="224" class="pin" text-anchor="start">VCC</text>
+<path class="wire" d="M420 260 L440 260" stroke="#1e293b" stroke-width="1.6"/>
+<text x="446" y="264" class="pin" text-anchor="start">GND</text>
+<path class="wire" d="M420 300 L440 300" stroke="#1e293b" stroke-width="1.6"/>
+<text x="446" y="304" class="pin" text-anchor="start">AOUT</text>
+<path class="wire" d="M440 220 L460 220 L460 100" stroke="#DC2626" stroke-width="1.6"/>
+<circle cx="460" cy="100" r="4" fill="#DC2626"/>
+<path class="wire" d="M440 260 L480 260 L480 140" stroke="#0F172A" stroke-width="1.6"/>
+<circle cx="480" cy="140" r="4" fill="#0F172A"/>
+<rect x="500" y="200" width="160" height="120" rx="5" fill="#E0F2FE" stroke="#0369A1" stroke-width="1.8"/>
+<text x="580" y="216" class="ref" text-anchor="middle">U4</text>
+<text x="580" y="254" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#0C4A6E">Sensor 3
+Zone C</text>
+<text x="580" y="270" text-anchor="middle" font-family="Arial,sans-serif" font-size="9.5" fill="#0369A1">Capacitive Sensor</text>
+<path class="wire" d="M660 220 L680 220" stroke="#1e293b" stroke-width="1.6"/>
+<text x="686" y="224" class="pin" text-anchor="start">VCC</text>
+<path class="wire" d="M660 260 L680 260" stroke="#1e293b" stroke-width="1.6"/>
+<text x="686" y="264" class="pin" text-anchor="start">GND</text>
+<path class="wire" d="M660 300 L680 300" stroke="#1e293b" stroke-width="1.6"/>
+<text x="686" y="304" class="pin" text-anchor="start">AOUT</text>
+<path class="wire" d="M680 220 L700 220 L700 100" stroke="#DC2626" stroke-width="1.6"/>
+<circle cx="700" cy="100" r="4" fill="#DC2626"/>
+<path class="wire" d="M680 260 L720 260 L720 140" stroke="#0F172A" stroke-width="1.6"/>
+<circle cx="720" cy="140" r="4" fill="#0F172A"/>
+<rect x="400" y="400" width="320" height="400" rx="6" fill="#E7F4EA" stroke="#2A7339" stroke-width="2"/>
+<text x="560" y="422" class="ref" text-anchor="middle">U1</text>
+<text x="560" y="605" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#14532D">ESP32</text>
+<path class="wire" d="M380 444 L400 444" stroke="#1e293b" stroke-width="1.6"/>
+<text x="374" y="448" class="pin" text-anchor="end">GPIO34</text>
+<path class="wire" d="M380 488 L400 488" stroke="#1e293b" stroke-width="1.6"/>
+<text x="374" y="492" class="pin" text-anchor="end">GPIO35</text>
+<path class="wire" d="M380 532 L400 532" stroke="#1e293b" stroke-width="1.6"/>
+<text x="374" y="536" class="pin" text-anchor="end">GPIO32</text>
+<path class="wire" d="M380 576 L400 576" stroke="#1e293b" stroke-width="1.6"/>
+<text x="374" y="580" class="pin" text-anchor="end">GPIO26</text>
+<path class="wire" d="M380 620 L400 620" stroke="#1e293b" stroke-width="1.6"/>
+<text x="374" y="624" class="pin" text-anchor="end">GPIO27</text>
+<path class="wire" d="M380 664 L400 664" stroke="#1e293b" stroke-width="1.6"/>
+<text x="374" y="668" class="pin" text-anchor="end">GPIO14</text>
+<path class="wire" d="M380 708 L400 708" stroke="#1e293b" stroke-width="1.6"/>
+<text x="374" y="712" class="pin" text-anchor="end">3V3</text>
+<path class="wire" d="M380 752 L400 752" stroke="#1e293b" stroke-width="1.6"/>
+<text x="374" y="756" class="pin" text-anchor="end">GND</text>
+<path class="wire" d="M720 533 L740 533" stroke="#1e293b" stroke-width="1.6"/>
+<text x="746" y="537" class="pin" text-anchor="start">VIN</text>
+<path class="wire" d="M720 666 L740 666" stroke="#1e293b" stroke-width="1.6"/>
+<text x="746" y="670" class="pin" text-anchor="start">GND</text>
+<text x="560" y="626" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#587058">WiFi · ADC · Decision Tree ML</text>
+<path class="wire" d="M740 533 L760 533 L760 100" stroke="#DC2626" stroke-width="1.6"/>
+<circle cx="760" cy="100" r="4" fill="#DC2626"/>
+<path class="wire" d="M740 666 L780 666 L780 140" stroke="#0F172A" stroke-width="1.6"/>
+<circle cx="780" cy="140" r="4" fill="#0F172A"/>
+<path class="wire" d="M380 752 L360 752 L360 140" stroke="#0F172A" stroke-width="1.6"/>
+<circle cx="360" cy="140" r="4" fill="#0F172A"/>
+<path class="wire" d="M200 300 L220 300 L220 444 L380 444" stroke="#2563EB" stroke-width="1.6"/>
+<text x="216" y="372" class="pin" fill="#2563EB" text-anchor="middle" transform="rotate(-90,216,372)">GPIO34</text>
+<path class="wire" d="M440 300 L480 300 L480 488 L380 488" stroke="#16A34A" stroke-width="1.6"/>
+<text x="476" y="394" class="pin" fill="#16A34A" text-anchor="middle" transform="rotate(-90,476,394)">GPIO35</text>
+<path class="wire" d="M680 300 L740 300 L740 532 L380 532" stroke="#7C3AED" stroke-width="1.6"/>
+<text x="736" y="416" class="pin" fill="#7C3AED" text-anchor="middle" transform="rotate(-90,736,416)">GPIO32</text>
+<rect x="860" y="360" width="180" height="240" rx="5" fill="#FEF9C3" stroke="#D97706" stroke-width="1.8"/>
+<text x="950" y="376" class="ref" text-anchor="middle">RLY1</text>
+<text x="950" y="472" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#78350F">4-Ch Relay</text>
+<text x="950" y="488" text-anchor="middle" font-family="Arial,sans-serif" font-size="9.5" fill="#D97706">4-Channel · Active LOW</text>
+<path class="wire" d="M840 400 L860 400" stroke="#1e293b" stroke-width="1.6"/>
+<text x="834" y="404" class="pin" text-anchor="end">VCC</text>
+<path class="wire" d="M840 440 L860 440" stroke="#1e293b" stroke-width="1.6"/>
+<text x="834" y="444" class="pin" text-anchor="end">GND</text>
+<path class="wire" d="M840 480 L860 480" stroke="#1e293b" stroke-width="1.6"/>
+<text x="834" y="484" class="pin" text-anchor="end">IN1</text>
+<path class="wire" d="M840 520 L860 520" stroke="#1e293b" stroke-width="1.6"/>
+<text x="834" y="524" class="pin" text-anchor="end">IN2</text>
+<path class="wire" d="M840 560 L860 560" stroke="#1e293b" stroke-width="1.6"/>
+<text x="834" y="564" class="pin" text-anchor="end">IN3</text>
+<path class="wire" d="M1040 394 L1060 394" stroke="#1e293b" stroke-width="1.6"/>
+<text x="1066" y="398" class="pin" text-anchor="start">COM1</text>
+<path class="wire" d="M1040 428 L1060 428" stroke="#1e293b" stroke-width="1.6"/>
+<text x="1066" y="432" class="pin" text-anchor="start">NO1</text>
+<path class="wire" d="M1040 462 L1060 462" stroke="#1e293b" stroke-width="1.6"/>
+<text x="1066" y="466" class="pin" text-anchor="start">COM2</text>
+<path class="wire" d="M1040 496 L1060 496" stroke="#1e293b" stroke-width="1.6"/>
+<text x="1066" y="500" class="pin" text-anchor="start">NO2</text>
+<path class="wire" d="M1040 530 L1060 530" stroke="#1e293b" stroke-width="1.6"/>
+<text x="1066" y="534" class="pin" text-anchor="start">COM3</text>
+<path class="wire" d="M1040 564 L1060 564" stroke="#1e293b" stroke-width="1.6"/>
+<text x="1066" y="568" class="pin" text-anchor="start">NO3</text>
+<path class="wire" d="M840 400 L820 400 L820 100" stroke="#DC2626" stroke-width="1.6"/>
+<circle cx="820" cy="100" r="4" fill="#DC2626"/>
+<path class="wire" d="M840 440 L800 440 L800 140" stroke="#0F172A" stroke-width="1.6"/>
+<circle cx="800" cy="140" r="4" fill="#0F172A"/>
+<path class="wire" d="M380 576 L740 576" stroke="#16A34A" stroke-width="1.6" stroke-dasharray="5,3"/>
+<path class="wire" d="M740 576 L740 480 L840 480" stroke="#16A34A" stroke-width="1.6" stroke-dasharray="5,3"/>
+<text x="736" y="572" class="pin" fill="#16A34A" text-anchor="middle">GPIO26</text>
+<path class="wire" d="M380 620 L740 620" stroke="#2563EB" stroke-width="1.6" stroke-dasharray="5,3"/>
+<path class="wire" d="M740 620 L740 520 L840 520" stroke="#2563EB" stroke-width="1.6" stroke-dasharray="5,3"/>
+<text x="736" y="616" class="pin" fill="#2563EB" text-anchor="middle">GPIO27</text>
+<path class="wire" d="M380 664 L740 664" stroke="#7C3AED" stroke-width="1.6" stroke-dasharray="5,3"/>
+<path class="wire" d="M740 664 L740 560 L840 560" stroke="#7C3AED" stroke-width="1.6" stroke-dasharray="5,3"/>
+<text x="736" y="660" class="pin" fill="#7C3AED" text-anchor="middle">GPIO14</text>
+<circle cx="1180" cy="240" r="40" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.8"/>
+<text x="1180" y="245" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#1E3A8A">M</text>
+<text x="1180" y="296" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#1E3A8A">Pump 1 Zone A</text>
+<text x="1180" y="306" class="ref" text-anchor="middle">M1</text>
+<path class="wire" d="M1180 200 L1180 180" stroke="#1e293b" stroke-width="1.6"/>
+<text x="1185" y="184" class="pin" text-anchor="start">+</text>
+<path class="wire" d="M1180 280 L1180 300" stroke="#1e293b" stroke-width="1.6"/>
+<text x="1185" y="304" class="pin" text-anchor="start">−</text>
+<path class="wire" d="M1060 394 L1100 394 L1100 60" stroke="#EA580C" stroke-width="1.6"/>
+<circle cx="1100" cy="60" r="4" fill="#EA580C"/>
+<path class="wire" d="M1060 428 L1180 428 L1180 180" stroke="#EA580C" stroke-width="1.6"/>
+<circle cx="1180" cy="428" r="4" fill="#1e293b"/>
+<path class="wire" d="M1180 300 L1180 320 L1200 320 L1200 140" stroke="#0F172A" stroke-width="1.6"/>
+<circle cx="1200" cy="140" r="4" fill="#0F172A"/>
+<circle cx="1180" cy="480" r="40" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.8"/>
+<text x="1180" y="485" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#1E3A8A">M</text>
+<text x="1180" y="536" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#1E3A8A">Pump 2 Zone B</text>
+<text x="1180" y="546" class="ref" text-anchor="middle">M2</text>
+<path class="wire" d="M1180 440 L1180 420" stroke="#1e293b" stroke-width="1.6"/>
+<text x="1185" y="424" class="pin" text-anchor="start">+</text>
+<path class="wire" d="M1180 520 L1180 540" stroke="#1e293b" stroke-width="1.6"/>
+<text x="1185" y="544" class="pin" text-anchor="start">−</text>
+<path class="wire" d="M1060 462 L1100 462 L1100 60" stroke="#EA580C" stroke-width="1.6"/>
+<circle cx="1100" cy="60" r="4" fill="#EA580C"/>
+<path class="wire" d="M1060 496 L1180 496 L1180 420" stroke="#EA580C" stroke-width="1.6"/>
+<circle cx="1180" cy="496" r="4" fill="#1e293b"/>
+<path class="wire" d="M1180 540 L1180 560 L1200 560 L1200 140" stroke="#0F172A" stroke-width="1.6"/>
+<circle cx="1200" cy="140" r="4" fill="#0F172A"/>
+<circle cx="1180" cy="720" r="40" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.8"/>
+<text x="1180" y="725" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#1E3A8A">M</text>
+<text x="1180" y="776" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#1E3A8A">Pump 3 Zone C</text>
+<text x="1180" y="786" class="ref" text-anchor="middle">M3</text>
+<path class="wire" d="M1180 680 L1180 660" stroke="#1e293b" stroke-width="1.6"/>
+<text x="1185" y="664" class="pin" text-anchor="start">+</text>
+<path class="wire" d="M1180 760 L1180 780" stroke="#1e293b" stroke-width="1.6"/>
+<text x="1185" y="784" class="pin" text-anchor="start">−</text>
+<path class="wire" d="M1060 530 L1100 530 L1100 60" stroke="#EA580C" stroke-width="1.6"/>
+<circle cx="1100" cy="60" r="4" fill="#EA580C"/>
+<path class="wire" d="M1060 564 L1180 564 L1180 660" stroke="#EA580C" stroke-width="1.6"/>
+<circle cx="1180" cy="564" r="4" fill="#1e293b"/>
+<path class="wire" d="M1180 780 L1180 800 L1200 800 L1200 140" stroke="#0F172A" stroke-width="1.6"/>
+<circle cx="1200" cy="140" r="4" fill="#0F172A"/>
+<rect x="200" y="760" width="500" height="200" rx="10" fill="#F5F3FF" stroke="#7C3AED" stroke-width="1.5" stroke-dasharray="6,3"/>
+<text x="450" y="780" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#7C3AED">☁  Firebase Cloud</text>
+<text x="450" y="798" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#4C1D95">Realtime Database  ·  Hosting  ·  Auth</text>
+<text x="450" y="812" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#4C1D95">ESP32  →  HTTPS PUT  →  /sensors</text>
+<text x="450" y="826" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#4C1D95">Dashboard  ←  WebSocket  ←  Firebase</text>
+<text x="450" y="840" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#4C1D95">URL: https://agrosense-e8582.web.app</text>
+<path class="wire" d="M560 800 L560 780" stroke="#7C3AED" stroke-width="1.6" stroke-dasharray="6,4"/>
+<text x="565" y="830" class="pin" fill="#7C3AED">WiFi / HTTPS</text>
+<path class="wire" d="M20 940 L60 940" stroke="#EA580C" stroke-width="2.5"/>
+<text x="66" y="944" font-family="Arial,sans-serif" font-size="11" fill="#374151">12V power</text>
+<path class="wire" d="M280 940 L320 940" stroke="#DC2626" stroke-width="2.5"/>
+<text x="326" y="944" font-family="Arial,sans-serif" font-size="11" fill="#374151">5V power</text>
+<path class="wire" d="M540 940 L580 940" stroke="#0F172A" stroke-width="2.5"/>
+<text x="586" y="944" font-family="Arial,sans-serif" font-size="11" fill="#374151">GND</text>
+<path class="wire" d="M800 940 L840 940" stroke="#2563EB" stroke-width="2.5"/>
+<text x="846" y="944" font-family="Arial,sans-serif" font-size="11" fill="#374151">Signal GPIO</text>
+<path class="wire" d="M1060 940 L1100 940" stroke="#7C3AED" stroke-width="2.5"/>
+<text x="1106" y="944" font-family="Arial,sans-serif" font-size="11" fill="#374151">WiFi / cloud</text>
+<text x="700" y="40" class="title" text-anchor="middle" font-size="18">AgroSense — Circuit Schematic</text>
+<text x="700" y="62" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#64748B">ESP32 · 3× Capacitive Sensors · 4-Ch Relay · 3× DC Pumps  |  FUTO Computer Science 2025</text>
+</svg>
